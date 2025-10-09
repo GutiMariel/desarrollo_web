@@ -1,0 +1,286 @@
+/*comentamos así en la hoja de estilos, organizar bien*/
+/*paleta de colores*/
+/*
+#FEA405 amarillo ocuro
+#C5EBAA verde claro
+#F6F193 amarillo claro
+#FFBC4C amarillo medio
+*/
+/*fuente font-family: Arial, Helvetica, sans-serif;*/
+
+/*estilos por etiquetas*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    /*font-family: Arial, Helvetica, sans-serif;    */
+}
+
+/*estilos por clase*/
+
+/*estilo para el header*/
+header {
+    background-color: #F6F193;
+    text-align: center;
+   
+}
+
+/*estilo para el menu de navegacion*/
+
+.estilo_nav {
+    list-style-type: none;
+    background-color: #F6F193;
+    text-align: right;
+    
+}
+
+.estilo_nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*estilo para los enlaces del menu de navegacion*/
+.estilo_nav a:hover {
+    color: #FEA405;
+    font-weight: bold;
+}
+
+/*estilo que van en los main*/
+
+/*estilo para las imagenes*/
+/*imagen de fondo*/
+.imagen_fondo {
+    background-image: url(../imagen/peonia.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/*imagen logo*/
+.logo {
+    width: 50px;
+    /*height: auto;*/
+}
+
+/*imagen de banner*/
+.baner {
+    width:100%;
+    height: auto;
+    background-size: contain;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*imagen de talleres*/
+.imagen_talleres {
+    width: 300px;
+    height: auto;
+    background-size: contain;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/*imagen de video*/
+
+.video_response {
+    position: relative;
+    overflow: hidden;
+    padding-top: 75%; /*56.25%;*/
+}
+
+.iframe_responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/*estilo para los titulos*/
+.texto_rojo {
+    color: #FEA405;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.texto_sin_margen {
+    color: #FFBC4C;
+    margin: 0;
+    text-align: center;
+}
+
+.texto_amarillo {
+    color: #FEA405;
+}
+
+/*estilo para el formulario de contacto*/
+
+.form1 label {
+    margin-top: 10px;
+    margin-bottom: 5px; 
+}
+.form1 input {
+    padding: 8px;
+    border: 1px solid #FEA405;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.form1 button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FEA405;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.form1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+}
+.info_contacto {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+/*estilo para grilla de taller*/
+.conten_grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "img1 sub1 sub1 sub1"
+        "img1 txt1 txt1 txt1"
+        "sub2 sub2 sub2 img2"
+        "txt2 txt2 txt2 img2"
+        "img3 img3 txt4 txt4";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 70px 150px 70px 150px 150px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+.conten_grid img {
+    width: 95%;
+    height: 95%;
+}
+.titulo_taller {
+    grid-area: titulo;
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img1 {
+    grid-area: img1;
+}   
+.sub1 {
+    grid-area: sub1;
+    color: #FEA405;
+    
+}  
+.txt1 {
+    grid-area: txt1;
+    padding-left: 2px;
+    text-align: justify;
+}       
+.img2 {
+    grid-area: img2;
+   
+}
+.sub2 {
+    grid-area: sub2;
+    color: #FEA405;
+
+    
+}
+
+.txt2 {
+    grid-area: txt2;
+    padding-left: 2px;
+    
+}   
+.img3 {
+    grid-area: img3;
+ 
+}
+.txt4 {
+    grid-area: txt4;
+    padding-left: 2px;
+    
+} 
+/*estilo para footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 50px;       
+    background-color: #F6F193;
+    text-align: center;
+    padding: 5px;
+
+}
+/*media queries para pantallas pequeñas*/
+@media (max-width: 650px) { 
+
+    img {
+
+        width: 100%;
+
+    }
+/*grilla de taller*/
+    .conten_grid {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "sub1"
+            "txt1"
+            "img1"
+            "sub2"
+            "txt2"
+            "img3";
+     
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 70px 120px 150px 70px 120px 150px;  
+        margin: 5px 5px; 
+    }
+    .txt4 {
+        display: none;
+    }
+    .img2 {
+        display: none;
+    }   
+
+  
+
+}
+
+/*media queries para pantallas medianas y grandes*/    
+@media (min-width: 651px) {
+    header      {
+
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 3px;
+    }
+    img {
+
+        width: 50%;
+
+    }
+
+}
