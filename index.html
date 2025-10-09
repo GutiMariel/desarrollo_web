@@ -55,49 +55,66 @@
         <image class="baner" src="./imagen/esencias.png" alt="Imagen de Aromas">
             <section>
                 <h2>Elaboración de aromas</h2>
-                <!--el artico es un parte del html que tiene que tener sentido por si mismo-->
-                <image src="./imagen/citricos.png" alt="Imagen de Citricos">
-                    <h3 class="texto_amarillo">Aromas citricos</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugiat, reiciendis amet
-                        aliquid enim provident
-                        velit! Tempore id, nam nostrum voluptatum, aliquid distinctio omnis doloremque consectetur
-                        eius, asperiores rerum nisi?</p>
-                    <ul>
-                        <li>Sus notas:</li>
-                        <p>Fondo limón y bergamota</p>
-                        <li>Curiosidades:</li>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt id qui aspernatur
-                            labore obcaecati,
-                            quibusdam magnam doloribus officiis fuga quo cupiditate quas explicabo voluptatibus
-                            veniam alias, ut aliquam porro nam.</p>
-                        <li>Perfumenes emblematicos:</li>
-                        <p>Chanel n°5, Dior J'adore, Gucci Bloom</p>
-                    </ul>
-
-                    <image src="./imagen/botellas.png" alt="Imagen de perfumes">
-                        <h3 class="texto_amarillo">Perfumes de Diseño</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugiat, re
-                        <ul>
+                <!--tarjetas de boostrap 1-->
+                <div class="card mb-3">
+                   <img src="./imagen/citricos.png" class="card-img-top" alt="Imagen de Citricos">
+                    <div class="card-body">
+                        <h5 class="card-title texto_amarillo">Aromas citricos</h5>
+                         <p class="card-text">Aunque la idea de definir olores se remonta a Aristóteles, las clasificaciones de perfumes proliferaron a finales del siglo XX, cuando la industria y los perfumistas sintieron la necesidad de establecer familias para poder agrupar aquellos perfumes con estructura y características similares. No obstante, hoy en día no existe una clasificación universalmente aceptada, pues es un hecho que cada persona aprecia las fragancias de forma distinta y que algunas creaciones no tienen líneas claramente delimitadas. Algunas fragancias son un cóctel de notas olfativas que podrían encajar en varias familias al mismo tiempo y, en otros casos, hay propuestas que prefieren directamente no etiquetarse.</p>
+                        <!--lista de aromas-->
+                        <ul class="card-text">
                             <li>Sus notas:</li>
-                            <p>Fondo de flores y maderas</p>
+                            <p>Fondo limón y bergamota</p>
                             <li>Curiosidades:</li>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt id qui aspernatur
-                                labore obcaecati,
-                                quibusdam magnam doloribus officiis fuga quo cupiditate quas explicabo voluptatibus
-                                veniam alias, ut aliquam porro nam.</p>
+                            <p>En cualquier caso, la realidad siempre es más compleja y hay otras familias fluctuantes que no queremos dejar de mencionar, como Aromática, Acuática, Afrutada, Cuero y, además, cada una de las categorías que aquí presentamos pueden dividirse a su vez en subfamilias con mayor detalle de matices.</p>
                             <li>Perfumenes emblematicos:</li>
                             <p>Chanel n°5, Dior J'adore, Gucci Bloom</p>
                         </ul>
-
+                    </div>
+                </div>
+                <!--tarjetas de boostrap 2-->
+                <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title texto_amarillo">Perfumes de Diseño</h5>
+                            <p class="card-text">Diferentes comunidades internacionales del perfume proponen distintas clasificaciones. En la Academia del Perfume proponemos una clasificación con siete familias olfativas, seis que son comúnmente aceptadas: Cítrica o Hespéride, Floral, Amaderada, Fougère, Chipre, y Ambarada u Oriental, a las que incorporamos Gourmand, una familia en alza muy apreciada en nuestra cultura, con una gastronomía arraigada. De ellas, las tres primeras pueden considerarse familias “realistas” y las cuatro siguientes “familias de fantasía”.</p>
+                            <!--lista de fragancias-->
+                            <ul>
+                                <li>Sus notas:</li>
+                                <p>Fondo florales y amaderados</p>
+                                <li>Curiosidades:</li>
+                                 <p>La clasificación de subfamilias puede ser, asimismo, muy extensa, pues hay combinaciones y matices casi infinitos. La Academia del Perfume ha hecho la labor de reunir una selección de subfamilias en su “Rueda Olfativa”</p>
+                                <li>Perfumenes emblematicos:</li>
+                                <p>CK ONE, Álvarez Gómez, 4711, Jean-Marie Farina Eau de Cologne, Eau de Rochas, Acqua di Parma Colonia.</p>
+                        </ul>
+                         </div>
+                        <img src="./imagen/botellas.png" class="card-img-bottom" alt="Imagen de perfumes">
+                </div>
             </section>
+            <br>
+            <br>    
     </main>
-    <!--pie de pagina footer-->
-    <footer>
-        <p>Siguenos en nuestras redes sociales</p>
-        <a href="https://www.instagram.com/"><img src="./imagen/instagram.png" alt="logo de instagram">Instagram</a>
-        <a href="https://www.facebook.com/"><img src="./imagen/facebook.png" alt="logo de facebook">Facebook</a>
-        <p>Taller de perfumes</p>
-        <image src="./imagen/logo.png" alt=""></image>
+   <!--pie de pagina footer-->
+    <footer class="footer">
+        <div class="grupo">
+            <div class="footer_item"> 
+               <figure> 
+                <a href="#"><img src="./imagen/logo.png"
+                    alt="Logo Taller de perfumes"></a> 
+                </figure>
+            </div>
+            <div class="footer_item"> 
+                <h4 class="texto_amarillo">Contactanos</h4> 
+                <p>Animate a conocer el mundo de la perfumeria</p> 
+            </div>
+            <div class="footer_item1">
+                <h4 class="texto_amarillo">Siguenos en nuestras redes sociales</h4>
+                
+                    <a href="https://www.instagram.com/"><img src="./imagen/instagram.png" alt="logo de instagram"></a>
+                    <a href="https://www.facebook.com/"><img src="./imagen/facebook.png" alt="logo de facebook"></a>
+                  
+            </div>
+        </div>
+        
     </footer>
     <!-- acá va el JS de boostrap -->
     <div>
