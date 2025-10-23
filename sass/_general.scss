@@ -1,0 +1,256 @@
+@use "variables.scss" as *;
+
+//  Reset 
+/*estilos por etiquetas*/
+
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+//  Header
+/*estilo para el header*/
+header {
+    background-color: $amarillo-claro;
+    text-align: center;
+}
+
+// nav
+/*estilo para el menu de navegacion*/
+.estilo_nav {
+    list-style-type: none;
+    background-color: $amarillo-claro;
+    text-align: right;
+
+    /*estilo para las palabras del menu*/
+    a {
+        text-decoration: none;
+        color: $color-texto;
+        font-family: $fuente-principal;
+
+        /*estilo para los enlaces del menu de navegacion*/
+        &:hover {
+            color: $amarillo-oscuro;
+            font-weight: bold;
+        }
+    }
+}
+
+//  Imágenes
+.imagen_fondo {
+    background-image: url(../imagen/peonia.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    margin: 10px;
+}
+
+.logo {
+    @include wid-hei(70px, auto);
+   
+  }
+
+.baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include wid-hei(70%, auto);
+    margin: 0px;
+}
+
+
+.imagen_talleres {
+    @include wid-hei(200px, auto);
+    background-size: contain;
+    margin: 10px 0;
+}
+
+// Video responsivo
+.video_response {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50%;
+
+    .iframe_responsive {
+        @include wid-hei(100%, 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+    }
+}
+
+// Titulos 
+/*estilo para los titulos*/
+.texto_rojo {
+    color: $amarillo-oscuro;
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-family: $fuente-secundaria;
+    text-align: center;
+}
+
+.texto_sin_margen {
+    color: $amarillo-medio;
+    margin: 0;
+    text-align: center;
+}
+
+.texto_amarillo {
+    color: $amarillo-oscuro;
+}
+
+  // Formulario de contacto
+/*estilo para el formulario de contacto*/
+.form1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 10px;
+
+    label {
+        margin: 10px 0 5px;
+    }
+
+    input {
+        padding: 8px;
+        border: 1px solid $amarillo-oscuro;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        width: 100%;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: $amarillo-oscuro;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+.info_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 0px;
+}
+
+//  Grilla de talleres
+/*estilo para grilla de taller*/
+.conten_grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "img1 sub1 sub1 sub1"
+        "img1 txt1 txt1 txt1"
+        "sub2 sub2 sub2 img2"
+        "txt2 txt2 txt2 img2"
+        "img3 img3 txt4 txt4";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 70px 150px 70px 150px 150px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    img {
+        @include wid-hei(95%, 95%);
+        
+    }
+
+    .titulo_taller {
+        grid-area: titulo;
+        color: $color-texto;
+        text-align: center;
+        font-family: $fuente-secundaria;
+    }
+
+    .img1 {
+        grid-area: img1;
+    }
+
+    .sub1 {
+        grid-area: sub1;
+        color: $amarillo-oscuro;
+    }
+
+    .txt1 {
+        grid-area: txt1;
+        padding-left: 2px;
+        text-align: justify;
+    }
+
+    .img2 {
+        grid-area: img2;
+    }
+
+    .sub2 {
+        grid-area: sub2;
+        color: $amarillo-oscuro;
+    }
+
+    .txt2 {
+        grid-area: txt2;
+        padding-left: 2px;
+    }
+
+    .img3 {
+        grid-area: img3;
+    }
+
+    .txt4 {
+        grid-area: txt4;
+        padding-left: 2px;
+    }
+}
+
+// Footer
+/*estilo para footer*/
+footer {
+    width: 100%;
+    background-color: $amarillo-claro;
+    text-align: center;
+    padding: 5px;
+
+    .footer {
+        .grupo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 45px 0;
+            @include wid-hei(100%, auto);
+            max-width: 1200px;
+
+            .footer_item {
+                figure {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include wid-hei(100%, 100%);
+                    
+
+                    img {
+                        @include wid-hei(150px, auto);
+                    }
+                }
+            }
+
+            .footer_item1 {
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    @include wid-hei(150px, 150px);
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+}
