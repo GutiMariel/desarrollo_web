@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- boostrap css  -->
+    <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>index</title>
@@ -49,80 +49,76 @@
     <main>
         <h1 class="texto_rojo">Taller de Perfumes</h1>
         <h2 class="texto_sin_margen">Conoce las maravillas de la perfumeria </h2>
-        <h3>Elaboracion de perfumes y aromas</h3>
-        <p>El perfume es tantas cosas… Hemos preguntado a los expertos, nuestros Académicos del Perfume,
+        <h3 class="texto_intenso">Elaboracion de perfumes y aromas</h3>
+        <p class="texto_fondo">El perfume es tantas cosas… Hemos preguntado a los expertos, nuestros Académicos del Perfume,
             qué significa para ellos y en sus definiciones podemos ver que el perfume es arte, es evocación, es
             inspiración,
             es ciencia, es poesía, es sensorialidad…
             Te animamos a descubrir todo lo que representa el perfume a través de nuestros Académicos.</p>
         <img class="imagen_index baner_movil" src="./imagen/esencias.png" alt="Imagen de Aromas">
         <section>
-            <div class="container my-5">
-                <!-- 🔹 Título principal -->
-                <h4 class="text-center mb-5 texto_amarillo">Elaboración de perfumes nicho.</h4>
-
-                <div class="row">
-                    <!-- Tarjeta 1 -->
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="./imagen/citricos.png" class="card-img-top imagen_index" alt="Imagen de cítricos">
-                            <div class="card-body">
-                                <h5 class="card-title texto_amarillo">Aromas cítricos</h5>
-                                <p class="card-text">
-                                    Aunque la idea de definir olores se remonta a Aristóteles, las clasificaciones de
-                                    perfumes proliferaron a finales del siglo XX, cuando la industria y los perfumistas
-                                    sintieron la necesidad de establecer familias para poder agrupar aquel los perfumes
-                                    con estructura y características similares. No obstante, hoy en día no existe una
-                                    clasificación universalmente aceptada, pues es un hecho que cada persona aprecia las
-                                    fragancias de forma distinta y que algunas creaciones no tienen líneas claramente
-                                    delimitadas. Algunas fragancias son un cóctel de notas olfativas que podrían encajar
-                                    en varias familias al mismo tiempo y, en otros casos, hay propuestas que prefieren
-                                    directamente no etiquetarse.
-                                </p>
-                                <ul class="lista-aromas">
-                                    <li><strong>Sus notas:</strong> Fondo limón y bergamota</li>
-                                    <li><strong>Curiosidades:</strong> En cualquier caso, la realidad siempre es más
-                                        compleja y hay otras familias fluctuantes que no queremos dejar de mencionar,
-                                        como Aromática, Acuática, Afrutada, Cuero y, además, cada una de las categorías
-                                        que aquí presentamos pueden dividirse a su vez en subfamilias con mayor detalle
-                                        de matices.</li>
-                                    <li><strong>Perfumes emblemáticos:</strong> Chanel n°5, Dior J'adore, Gucci Bloom
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tarjeta 2 -->
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title texto_amarillo">Perfumes de diseño</h5>
-                                <p class="card-text">
-                                    Diferentes comunidades internacionales del perfume proponen distintas
-                                    clasificaciones. En la Academia del Perfume proponemos una clasificación con siete
-                                    familias olfativas, seis que son comúnmente aceptadas: Cítrica o Hespéride, Floral,
-                                    Amaderada, Fougère, Chipre, y Ambarada u Oriental, a las que incorporamos Gourmand,
-                                    una familia en alza muy apreciada en nuestra cultura, con una gastronomía arraigada.
-                                    De ellas, las tres primeras pueden considerarse familias “realistas” y las cuatro
-                                    siguientes “familias de fantasía”.
-                                </p>
-                                <ul class="lista-aromas">
-                                    <li><strong>Sus notas:</strong> Fondo florales y amaderados</li>
-                                    <li><strong>Curiosidades:</strong> La clasificación de subfamilias puede ser,
-                                        asimismo, muy extensa, pues hay combinaciones y matices casi infinitos. La
-                                        Academia del Perfume ha hecho la labor de reunir una selección de subfamilias en
-                                        su “Rueda Olfativa”</li>
-                                    <li><strong>Perfumes emblemáticos:</strong> CK ONE, Álvarez Gómez, 4711, Jean-Marie
-                                        Farina Eau de Cologne, Eau de Rochas, Acqua di Parma Colonia.</li>
-                                </ul>
-                            </div>
-                            <img src="./imagen/botellas.png" class="card-img-bottom imagen_index"
-                                alt="Imagen de perfumes">
-                        </div>
+            <h4 class="texto_intenso">Elaboración de perfumes nicho.</h4>
+            <!-- Tarjeta de bootstrap-->
+            <div class="cards-container">
+                <div class="card h-100">
+                    <img src="./imagen/citricos.png" class="card-img-top imagen_index" alt="Imagen de cítricos">
+                    <div class="card-body">
+                        <h5 class="card-title texto_amarillo">Aromas cítricos</h5>
+                        <p class="card-text">
+                            Aunque la idea de definir olores se remonta a Aristóteles, las clasificaciones de
+                            perfumes proliferaron a finales del siglo XX, cuando la industria y los perfumistas
+                            sintieron la necesidad de establecer familias para poder agrupar aquel los perfumes
+                            con estructura y características similares. No obstante, hoy en día no existe una
+                            clasificación universalmente aceptada, pues es un hecho que cada persona aprecia las
+                            fragancias de forma distinta y que algunas creaciones no tienen líneas claramente
+                            delimitadas. Algunas fragancias son un cóctel de notas olfativas que podrían encajar
+                            en varias familias al mismo tiempo y, en otros casos, hay propuestas que prefieren
+                            directamente no etiquetarse.
+                        </p>
+                        <ul class="lista-aromas">
+                            <li><strong>Sus notas:</strong> Fondo limón y bergamota</li>
+                            <li><strong>Curiosidades:</strong> En cualquier caso, la realidad siempre es más
+                                compleja y hay otras familias fluctuantes que no queremos dejar de mencionar,
+                                como Aromática, Acuática, Afrutada, Cuero y, además, cada una de las categorías
+                                que aquí presentamos pueden dividirse a su vez en subfamilias con mayor detalle
+                                de matices.</li>
+                            <li><strong>Perfumes emblemáticos:</strong> Chanel n°5, Dior J'adore, Gucci Bloom
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
+
+                <!-- Tarjeta 2 -->
+
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title texto_amarillo">Perfumes de diseño</h5>
+                        <p class="card-text">
+                            Diferentes comunidades internacionales del perfume proponen distintas
+                            clasificaciones. En la Academia del Perfume proponemos una clasificación con siete
+                            familias olfativas, seis que son comúnmente aceptadas: Cítrica o Hespéride, Floral,
+                            Amaderada, Fougère, Chipre, y Ambarada u Oriental, a las que incorporamos Gourmand,
+                            una familia en alza muy apreciada en nuestra cultura, con una gastronomía arraigada.
+                            De ellas, las tres primeras pueden considerarse familias “realistas” y las cuatro
+                            siguientes “familias de fantasía”.
+                        </p>
+                        <ul class="lista-aromas">
+                            <li><strong>Sus notas:</strong> Fondo florales y amaderados</li>
+                            <li><strong>Curiosidades:</strong> La clasificación de subfamilias puede ser,
+                                asimismo, muy extensa, pues hay combinaciones y matices casi infinitos. La
+                                Academia del Perfume ha hecho la labor de reunir una selección de subfamilias en
+                                su “Rueda Olfativa”. Viaja a través de la fascinante historia del perfume, llena de
+                                curiosidades y anécdotas, desde su origen al siglo XXI.</li>
+                            <li><strong>Perfumes emblemáticos:</strong> CK ONE, Álvarez Gómez, 4711, Jean-Marie
+                                Farina Eau de Cologne, Eau de Rochas, Acqua di Parma Colonia.</li>
+                        </ul>
+                    </div>
+                    <img src="./imagen/botellas.png" class="card-img-bottom imagen_index" alt="Imagen de perfumes">
+                </div>
+
             </div>
+
 
         </section>
         <br>
