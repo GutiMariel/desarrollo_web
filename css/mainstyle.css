@@ -49,7 +49,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  margin: 10px;
+  margin: 30px;
 }
 
 .logo {
@@ -87,7 +87,7 @@ header {
   border: 0;
 }
 
-/*estilo para los titulos*/
+/*estilo para los titulos y textos*/
 .texto_rojo {
   color: #FEA405;
   font-size: 3rem;
@@ -104,6 +104,18 @@ header {
 
 .texto_amarillo {
   color: #FEA405;
+  margin: 10px;
+}
+
+.texto_intenso {
+  color: #000000;
+  margin: 10px;
+}
+
+.texto_fondo {
+  color: #000000;
+  margin: 20px;
+  text-align: justify;
 }
 
 /*estilo para el formulario de contacto*/
@@ -141,6 +153,28 @@ header {
   align-items: center;
   margin: 5px;
   padding: 0px;
+}
+
+/*tarjetas de bootstrap*/
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.card {
+  flex: 1 1 45%;
+  min-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /*estilo para grilla de taller*/
