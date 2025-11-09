@@ -1,7 +1,7 @@
 @use "variables.scss" as *;
 
 //  Media Queries responsivo
-/*media queries para pantallas pequeñas*/
+/*media queries para mobile*/
 @media (max-width: 650px) {
     img {
         width: 100%;
@@ -54,7 +54,23 @@
     }
 }
 
-@media (min-width: 651px) {
+/*media queries para tablet*/
+@media (min-width: 651px) and (max-width: 990px) {
+    .conten_grid {
+        margin: 30px;
+    }
+
+    .imagen_index {
+        display: flex;
+        justify-content: right;
+        @include wid-hei(80%, auto);
+        padding: 0px 0px 10px 50px;
+
+    }
+}
+
+/*media queries para desktop*/
+@media (min-width: 991px) {
     header {
         position: sticky;
         top: 0;
@@ -74,15 +90,64 @@
 
     }
 
-     .baner_movil {
-            background-origin: padding-box;
-            transition: all 0.3s ease;
+    .baner_movil {
+        background-origin: padding-box;
+        transition: all 0.3s ease;
 
-            &:hover {
-                transform: scale(1.1) rotate(2deg);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            }
-
-            margin: 0px;
+        &:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
+
+        margin: 0px;
+    }
+
+    /*tarjetas de bootstrap*/
+    .card {
+        background-color: $color-texto;
+        color: $amarillo-claro;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .lista-aromas {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 0.8rem;
+
+            strong {
+                color: $amarillo-medio;
+            }
+        }
+    }
+
+
+    /* Footer para desktop*/
+    .footer {
+        .grupo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .footer_item,
+            .footer_item1 {
+                figure img {
+                    @include wid-hei(100px, auto);
+                }
+            }
+        }
+    }
 }
